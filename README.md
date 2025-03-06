@@ -10,7 +10,10 @@ Steps to connect with EtherCAT drive
 
 
 -- Control Motion using
+
 Profile Velocity Mode
+
 Profile Position Mode
+
 Q program Mode
 
