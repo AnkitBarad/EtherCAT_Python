@@ -1,7 +1,7 @@
 # EtherCAT_Python
 ![Python](https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg)
 
-Applied Motion's EtherCAT products can be control using Python
+:arrow_right: → Applied Motion's EtherCAT products can be control using Python
 
 -- Users can use different control mode to control the motion
 
