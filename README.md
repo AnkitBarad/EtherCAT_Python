@@ -1,7 +1,7 @@
 # EtherCAT_Python
 ![Python](https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg)
 
-:arrow_right: → Applied Motion's EtherCAT products can be control using Python
+:arrow_right:  Applied Motion's EtherCAT products can be control using Python
 
 -- Users can use different control mode to control the motion
 
@@ -11,9 +11,9 @@ Steps to connect with EtherCAT drive
 
 -- Control Motion using
 
-**Profile Velocity Mode**   -- **Profile_Velocity_Mode.py**
+:arrow_right: **Profile Velocity Mode**   -- **Profile_Velocity_Mode.py**
 
-**Profile Position Mode**
+:arrow_right: **Profile Position Mode**
 
-**Q program Mode**
+:arrow_right: **Q program Mode**
 
