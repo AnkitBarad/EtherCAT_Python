@@ -11,7 +11,7 @@ Steps to connect with EtherCAT drive
 
 -- Control Motion using
 
-**Profile Velocity Mode**
+**Profile Velocity Mode**   -- Profile_Velocity_Mode.py
 
 **Profile Position Mode**
 
