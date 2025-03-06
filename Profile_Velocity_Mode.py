@@ -45,17 +45,14 @@ modes_of_operation = {
 
 def config_func():
     global device
-    # target velocity
-    device.sdo_write(0x60FF, 0, bytes(ctypes.c_int32(50000))) #know your encoder resolution, for some product it is 10000/rev, for some it is 20000/rev
+    # target velocity,  #know your encoder resolution, for some product it is 10000/rev, for some it is 20000/rev, for reverse direction use negative value
+    device.sdo_write(0x60FF, 0, bytes(ctypes.c_int32(50000)))
     # profile acceleration
     device.sdo_write(0x6083, 0, bytes(ctypes.c_int32(50000)))
     # profile deceleration
     device.sdo_write(0x6084, 0, bytes(ctypes.c_int32(50000)))
 
 def processdata_thread():
-    #global master  # not sure if this is necessary
-    #global pd_thread_stop_event  # not sure if this is necessary
-    #global actual_wkc  # not sure if this is necessary
     while not pd_thread_stop_event.is_set():
         master.send_processdata()
         actual_wkc = master.receive_processdata(10000)
@@ -83,9 +80,8 @@ if master.config_init() > 0:
 
         if master.state == pysoem.OP_STATE:
             output_data = OutputPdo()
-            #output_data.target_velocity = 30000
             output_data.modes_of_operation = modes_of_operation['Profile velocity mode']
-            #output_data.target_velocity = 0  # counts ( 20000 = 1 rev/sec)
+            
 
 
 
