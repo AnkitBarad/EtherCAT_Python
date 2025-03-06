@@ -1,0 +1,29 @@
+# Find all the availabe adapters and find EtherCAT slave
+
+# Find your adapter id
+import pysoem
+
+adapters = pysoem.find_adapters()
+
+for i, adapter in enumerate(adapters):
+   print('Adapter {}'.format(i))
+   print('  {}'.format(adapter.name))
+   print('  {}'.format(adapter.desc))
+
+
+# Find EtherCAT slave device
+master = pysoem.Master()
+
+master.open("\\Device\\NPF_{ABF1453B-31C2-47F8-B7DC-10C3C0C7D7A5}")
+
+if master.config_init() > 0:
+   for device in master.slaves:
+      print(f'Found Device {device.name}')
+else:
+   print('no device found')
+
+
+master.state
+if master.config_init() > 0:
+    print("Found", master.config_init(), "slaves")
+
