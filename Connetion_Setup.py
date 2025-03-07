@@ -15,7 +15,7 @@ for i, adapter in enumerate(adapters):
 master = pysoem.Master()
 
 # once you find the correct adapter address open the master to get communication with the slave
-master.open("\\Device\\NPF_{ABF1453B-31C2-47F8-B7DC-10C3C0C7D7A5}")
+master.open("\\Device\\NPF_{'your adapter id}")
 
 if master.config_init() > 0:
    for device in master.slaves:
