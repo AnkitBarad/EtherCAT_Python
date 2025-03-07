@@ -8,8 +8,8 @@
 
 
 
-Steps to connect with EtherCAT drive
-Use **Connetion_Setup.py** file to find the adapter on the PC and confirm connection with the drive
+
+🎯 Use **Connetion_Setup.py** file to find the adapter on the PC and confirm connection with the drive
 
 📌 Users can use different control mode to control the motion
 
